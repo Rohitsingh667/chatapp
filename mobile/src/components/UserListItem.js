@@ -13,10 +13,7 @@ const UserListItem = ({ user, onPress }) => {
       </View>
       <View style={styles.content}>
         <Text style={styles.username}>{user.username}</Text>
-        <View style={styles.statusContainer}>
-          <View style={[styles.statusDot, { backgroundColor: user.isOnline ? '#34C759' : '#8E8E93' }]} />
-          <Text style={styles.status}>{user.isOnline ? 'Online' : 'Offline'}</Text>
-        </View>
+        <Text style={styles.status}>{user.isOnline ? 'Online' : 'Offline'}</Text>
       </View>
     </TouchableOpacity>
   );
@@ -25,44 +22,28 @@ const UserListItem = ({ user, onPress }) => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#fff',
     padding: 15,
     borderBottomWidth: 1,
-    borderBottomColor: '#f0f0f0'
+    borderBottomColor: '#ccc'
   },
   avatar: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 30,
+    height: 30,
+    borderRadius: 15,
     backgroundColor: '#007AFF',
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 15
+    marginRight: 10
   },
   avatarText: {
     color: '#fff',
-    fontSize: 16,
-    fontWeight: 'bold'
+    fontSize: 14
   },
   content: {
     flex: 1
   },
   username: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: '#333',
-    marginBottom: 5
-  },
-  statusContainer: {
-    flexDirection: 'row',
-    alignItems: 'center'
-  },
-  statusDot: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-    marginRight: 8
+    fontSize: 16
   },
   status: {
     fontSize: 12,

@@ -36,8 +36,7 @@ const MessageItem = ({ message, isOwnMessage }) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginVertical: 2,
-    marginHorizontal: 10
+    margin: 5
   },
   ownMessage: {
     alignItems: 'flex-end'
@@ -47,15 +46,14 @@ const styles = StyleSheet.create({
   },
   bubble: {
     maxWidth: '80%',
-    borderRadius: 15,
-    paddingHorizontal: 15,
-    paddingVertical: 10
+    borderRadius: 10,
+    padding: 10
   },
   ownBubble: {
     backgroundColor: '#007AFF'
   },
   otherBubble: {
-    backgroundColor: '#fff'
+    backgroundColor: '#f0f0f0'
   },
   messageText: {
     fontSize: 16
@@ -64,30 +62,28 @@ const styles = StyleSheet.create({
     color: '#fff'
   },
   otherText: {
-    color: '#333'
+    color: '#000'
   },
   footer: {
     flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 5,
-    justifyContent: 'flex-end'
+    marginTop: 5
   },
   timestamp: {
-    fontSize: 12,
+    fontSize: 10,
     marginRight: 5
   },
   ownTimestamp: {
-    color: 'rgba(255, 255, 255, 0.7)'
+    color: '#fff'
   },
   otherTimestamp: {
-    color: '#999'
+    color: '#666'
   },
   status: {
-    fontSize: 12,
-    color: 'rgba(255, 255, 255, 0.7)'
+    fontSize: 10,
+    color: '#fff'
   },
   readStatus: {
-    color: '#34C759'
+    color: '#00ff00'
   }
 });
 

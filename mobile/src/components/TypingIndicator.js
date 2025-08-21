@@ -20,13 +20,11 @@ const TypingIndicator = ({ users }) => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
-    paddingHorizontal: 15
+    padding: 10
   },
   text: {
-    fontSize: 14,
-    color: '#666',
-    fontStyle: 'italic'
+    fontSize: 12,
+    color: '#666'
   }
 });
 

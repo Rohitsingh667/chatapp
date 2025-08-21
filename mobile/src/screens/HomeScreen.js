@@ -61,13 +61,11 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5'
+    backgroundColor: '#fff'
   },
   title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    padding: 20,
-    color: '#333'
+    fontSize: 18,
+    padding: 15
   }
 });
 
